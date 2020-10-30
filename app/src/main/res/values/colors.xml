@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#fbc000</color>
+
+    <color name="colorPrimaryDark">#fcc930</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#fff</color>
+
+    <color name="black_transparent">#c6121111</color>
+
+    <color name="bg_login">#26ae90</color>
+
+    <color name="bg_register">#2e3237</color>
+
+    <color name="input_login">#222222</color>
+
+    <color name="input_login_hint">#999999</color>
+
+    <color name="input_register">#888888</color>
+
+    <color name="input_register_bg">#3b4148</color>
+
+    <color name="input_register_hint">#5e6266</color>
+
+    <color name="btn_login">#26ae90</color>
+
+    <color name="btn_red">#dd4b39</color>
+
+    <color name="btn_green">#139c57</color>
+
+    <color name="btn_login_bg">#eceef1</color>
+
+    <color name="lbl_name">#333333</color>
+
+    <color name="btn_logout_bg">#ff6861</color>
+
+    <color name="QRCodeBlackColor">#000000</color>
+
+    <color name="QRCodeWhiteColor">#FFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="bg_main">#428bca</color>
+
+    <!--<color name="colorPrimaryDark">#FBC000</color>-->
+
+
+    <color name="colorAccentSecondary">#ad1a7f</color>
+
+    <color name="viewBg">#f8f8f8</color>
+
+    <color name="btn_disabled">#999</color>
+
+    <color name="lbl_value">#222222</color>
+
+    <color name="black">#000</color>
+
+</resources>

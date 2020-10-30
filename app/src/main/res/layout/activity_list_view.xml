@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ListView"
+    android:id="@+id/layout"
+    android:background="#000000"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profilepicture"
+        android:layout_marginLeft="10dp"
+        android:background="@color/black_transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adedeji Gideon"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/picture"
+        android:id="@+id/username"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gideonist@gmail.com"
+        android:textColor="#C0C0C0"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toEndOf="@id/picture"
+        android:id="@+id/useremail"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

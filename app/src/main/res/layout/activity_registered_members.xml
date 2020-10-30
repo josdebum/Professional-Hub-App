@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisteredMembers">
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/data_model"
+        android:scaleType="centerCrop"/>
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:id="@+id/login_form">
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/email_login_form"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:text="SURNAME"
+                    android:paddingBottom="4dp"/>
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="8dp"
+                    android:id="@+id/surname"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/input_register_hint"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:inputType="textCapWords"
+                    android:hint="@string/hint_surname"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp">
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="GENDER"
+                        android:paddingBottom="4dp"/>
+
+
+                    <RadioGroup
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:id="@+id/gender"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:padding="10dp"
+                            android:id="@+id/gender_female"
+                            android:text="Female"
+                            android:background="@color/white"
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"/>
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:padding="10dp"
+                            android:id="@+id/gender_male"
+                            android:text="Male"
+                            android:background="@color/white"
+                            android:layout_weight="1"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/email_layout"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="EMAIL"
+                        android:paddingBottom="4dp"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:padding="10dp"
+                        android:id="@+id/email"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/input_register"
+                        android:textColorHint="@color/input_register_hint"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/hint_email"
+                        android:background="@color/white"/>
+
+                </LinearLayout>
+
+                <!--<Spinnerandroid:id="@+id/fullname_text"style="@style/spinner_style"android:layout_width="match_parent"android:layout_height="0dp"android:layout_weight="1"android:drawSelectorOnTop="true"></Spinner>-->
+
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="PHONE NUMBER"
+                        android:paddingBottom="4dp"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:padding="10dp"
+                        android:id="@+id/phone"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/input_register"
+                        android:textColorHint="@color/input_register_hint"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:hint="e.g 08123456789"
+                        android:background="@color/white"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/membership_layout"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="MEMBERSHIP TYPE"
+                        android:paddingBottom="4dp"/>
+
+
+                    <RadioGroup
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:id="@+id/membership_type"
+                        android:background="@color/white">
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/membership_pay_as_you_go"
+                            android:text="Pay as you go"
+                            android:paddingLeft="8dp"/>
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/membership_izone_individual"
+                            android:text="Izone (Individual)"
+                            android:paddingLeft="8dp"/>
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/membership_izone_group"
+                            android:text="Izone (Startup/Group)"
+                            android:paddingLeft="8dp"/>
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/membership_premium"
+                            android:text="Premium"
+                            android:paddingLeft="8dp"/>
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/membership_intern"
+                            android:text="Intern"
+                            android:paddingLeft="8dp"/>
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/membership_linux"
+                            android:text="Hub Courses"
+                            android:paddingLeft="8dp"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/business_name_layout"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:text="BUSINESS NAME (Optional)"
+                        android:paddingBottom="4dp"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:padding="10dp"
+                        android:id="@+id/business_name"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/input_register"
+                        android:textColorHint="@color/input_register_hint"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:inputType="textCapWords"
+                        android:hint="e.g LPI Innovation Hub"
+                        android:background="@color/white"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/btnRegister"
+                    android:textColor="@color/white"
+                    android:text="Register Member"
+                    android:background="@color/colorPrimaryDark"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/btnLinkToLoginScreen"
+                    android:textColor="@color/white"
+                    android:text="Changed your mind? Cancel."
+                    android:background="@null"
+                    android:textSize="15sp"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
