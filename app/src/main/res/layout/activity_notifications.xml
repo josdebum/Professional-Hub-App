@@ -8,7 +8,9 @@
 
         <TextView android:id="@+id/section_label"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <ListView
             android:id="@+id/log_list"
@@ -25,13 +27,15 @@
 
 
         <LinearLayout
-                android:id="@+id/empty_view_internet"
+            android:id="@+id/empty_view_internet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:orientation="vertical"
             android:padding="16dp"
-            android:visibility="gone">
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
@@ -78,7 +82,7 @@
             android:layout_height="160dp"
             android:layout_gravity="center"
             android:src="@drawable/no_user"
-            android:tint="#e6e6e6"/>
+            app:tint="#e6e6e6" />
 
         <TextView
             android:id="@+id/empty_view_text"
@@ -100,6 +104,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:visibility="gone"/>
 
 

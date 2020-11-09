@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "923290062354",
+    "firebase_url": "https://lpi-hub-app.firebaseio.com",
+    "project_id": "lpi-hub-app",
+    "storage_bucket": "lpi-hub-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923290062354:android:9bdc537cc34471ef3152cb",
+        "android_client_info": {
+          "package_name": "com.example.lpihubapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923290062354-jnkahf6feoehakmru02ealb1ac74s030.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2rsxnwc7H_UHRErda3KwxXDA24R-zNK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923290062354-jnkahf6feoehakmru02ealb1ac74s030.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

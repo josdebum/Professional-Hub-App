@@ -9,17 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".log"></activity>
+        <activity android:name=".MembersActivity"></activity>
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".log" />
         <activity android:name=".SignUp" />
         <activity android:name=".SignIn" />
-        <activity android:name=".RegisteredMembers" />
+        <activity android:name=".RegisterNewMembers" />
         <activity android:name=".Notifications" />
         <activity android:name=".ListView" />
         <activity android:name=".MembersList" />
         <activity android:name=".Members" />
         <activity android:name=".MembersDetails" />
-        <activity android:name=".WelcomeScreen" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WelcomeScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

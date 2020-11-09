@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "444889003561",
+    "firebase_url": "https://lpi-hub-app-d0ed5.firebaseio.com",
+    "project_id": "lpi-hub-app-d0ed5",
+    "storage_bucket": "lpi-hub-app-d0ed5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444889003561:android:7ac2715ad25e0419a18e38",
+        "android_client_info": {
+          "package_name": "com.example.lpihubapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444889003561-j1sl66ccvd8l32hkk07squea4scvv1h2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lpihubapp",
+            "certificate_hash": "31a3fec19c919b4f410f95e2a6b3aa390e73431e"
+          }
+        },
+        {
+          "client_id": "444889003561-ul99300cm4r32ugku721foan48n06n0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7mWqK_Lw6eksjmM8YyyNH7XLxkTevSE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444889003561-ul99300cm4r32ugku721foan48n06n0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

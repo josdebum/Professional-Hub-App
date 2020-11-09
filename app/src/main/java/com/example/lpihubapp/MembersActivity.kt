@@ -5,20 +5,21 @@ import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 
-class Members : AppCompatActivity() {
+class MembersActivity : AppCompatActivity() {
+
     lateinit var tabLayout: TabLayout
     lateinit var viewPager: ViewPager
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_members)
+        setContentView(R.layout.activity_members2)
+
         title = "KotlinApp"
         tabLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewPager)
-        tabLayout.addTab(tabLayout.newTab().setText("All"))
-        tabLayout.addTab(tabLayout.newTab().setText("LoggedIn"))
-        tabLayout.addTab(tabLayout.newTab().setText("Subscribed"))
+        tabLayout.addTab(tabLayout.newTab().setText("Details"))
+        tabLayout.addTab(tabLayout.newTab().setText("Activities"))
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
-        val adapter = MyAdapter(this, supportFragmentManager,
+        val adapter = MembersAdapter(this, supportFragmentManager,
             tabLayout.tabCount)
         viewPager.adapter = adapter
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
@@ -31,3 +32,4 @@ class Members : AppCompatActivity() {
         })
     }
 }
+

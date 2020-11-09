@@ -10,9 +10,9 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:tintMode="multiply"
-        android:tint="@color/colorPrimaryDark"
         android:src="@drawable/handsup"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        app:tint="@color/colorPrimaryDark" />
 
     <!-- <ImageViewandroid:layout_width="match_parent"android:layout_height="190dp"android:scaleType="centerCrop"android:src="@drawable/lpi_reception" />-->
 
@@ -26,7 +26,7 @@
         android:paddingRight="30dp"
         android:paddingLeft="30dp">
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:background="@color/white"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -40,7 +40,7 @@
             android:hint="Email"
             android:layout_marginBottom="15dp"/>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:background="@color/white"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -53,6 +53,23 @@
             android:inputType="textPassword"
             android:hint="@string/hint_password"
             android:layout_marginBottom="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/username"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:maxLines="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="15dp"/>
 
         <Button
             android:background="@color/colorPrimaryDark"
@@ -67,7 +84,7 @@
             android:background="@null"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:id="@+id/btn_reset_password"
+            android:id="@+id/tv_forgot_password"
             android:textColor="@color/white"
             android:layout_marginBottom="-12dp"
             android:text="Forgot password?"
@@ -79,18 +96,13 @@
             android:background="@null"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
-            android:id="@+id/sign_in_button"
+            android:id="@+id/sign_in"
             android:textColor="@color/white"
             android:text="Already have an account? Sign in!"
             android:textSize="15sp"
             android:textAllCaps="false"/>
 
-        <com.google.android.gms.common.SignInButton
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:id="@+id/google_sign_in_button"
-            android:layout_gravity="center_horizontal"
-            android:visibility="gone"/>
+
 
 
 
