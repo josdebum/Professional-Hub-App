@@ -20,5 +20,13 @@ class MainActivity : AppCompatActivity() {
         add_members.setOnClickListener(){
             startActivity(Intent(this, RegisterNewMembers::class.java))
         }
+
+        notifications.setOnClickListener(){
+            startActivity(Intent(this, Notifications::class.java))
+        }
+
+        scan.setOnClickListener(){
+            startActivity(Intent(this, ScanMainActivity::class.java))
+        }
     }
 }

@@ -1,14 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SubscribedFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/circleprogressbar_cpb_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#c6121111"
+                android:padding="10dp" />
+<!--                android:cpbStartAngle="270"-->
+<!--                android:cpbBackgroundColor="#dcdcdc"-->
+<!--                android:cpbBackgroundSize="10dp"-->
+<!--                android:cpbFirstGradientColors="#ff33b5e5"-->
+<!--                android:cpbFourthGradientColors="#ffff4444"-->
+<!--                android:cpbGravity="center_vertical"-->
+<!--                android:cpbLoadingStartAngle="270"-->
+<!--                android:cpbLoadingDrawOther="true"-->
+<!--                android:cpbLoadingDuration="3000"-->
+<!--                android:cpbLoadingRepeatMode="Reverse"-->
+<!--                android:cpbLoadingSweepAngle="360"-->
+<!--                android:cpbLoadingText="..."-->
+<!--                android:cpbMax="100"-->
+<!--                android:cpbProgress="60"-->
+<!--                android:cpbProgressDuration="2000"-->
+<!--                android:cpbProgressMode="Progress"-->
+<!--                android:cpbProgressSize="14dp"-->
+<!--                android:cpbProgressValueTextColor="#ff33b5e5"-->
+<!--                android:cpbProgressValueTextSize="40sp"-->
+<!--                android:cpbRadius="80dp"-->
+<!--                android:cpbScaleType="None"-->
+<!--                android:cpbSecondGradientColors="#ff99cc00"-->
+<!--                android:cpbShowProgressValue="true"-->
+<!--                android:cpbSweepAngle="360"-->
+<!--                android:cpbBottomText="HOURS"-->
+<!--                android:cpbTopTextColor="@color/colorPrimary"-->
+<!--                android:cpbBottomTextColor="#ffffbb33"-->
+<!--                android:cpbTopTextGap="10dp"-->
+<!--                android:cpbBottomTextGap="2dp"-->
+<!--                android:cpbTopTextSize="13sp"-->
+<!--                android:cpbBottomTextSize="16sp"-->
+<!--                android:cpbThirdGradientColors="#ffffbb33"-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="HOURLY USAGE"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/hourly_usage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="4dp"
+                            android:text="62%"
+                            android:textColor="#fff"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/hourly_usage_left"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="4dp"
+                            android:text="13 hours left"
+                            android:textColor="#fff"
+                            android:textSize="11sp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/hourly_usage_pb"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:progress="45"
+                        android:progressDrawable="@drawable/progress_bar_blue" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="MONTHLY USAGE"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/daily_usage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="4dp"
+                            android:text="62%"
+                            android:textColor="#fff"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/daily_usage_left"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:padding="4dp"
+                            android:text="13 days left"
+                            android:textColor="#fff"
+                            android:textSize="11sp"
+                            android:textStyle="italic" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/daily_usage_pb"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:progress="45"
+                        android:progressDrawable="@drawable/progress_bar_blue" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/log_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_square_black_transparent"
+            android:divider="#747474"
+            android:dividerHeight="0.25dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:visibility="gone"
+            tools:listitem="@layout/logging_item" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#c6121111"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_hourly_usage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/rounded_square_yellow"
+                android:gravity="center"
+                android:text="Adjust hourly usage"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_daily_usage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/rounded_square_yellow"
+                android:gravity="center"
+                android:text="Adjust daily usage"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

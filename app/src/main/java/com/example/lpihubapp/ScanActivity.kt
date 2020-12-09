@@ -3,9 +3,9 @@ package com.example.lpihubapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MembersDetails : AppCompatActivity() {
+class ScanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_members_details)
+        setContentView(R.layout.activity_scan)
     }
 }

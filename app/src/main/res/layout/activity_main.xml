@@ -248,17 +248,18 @@
         android:layout_marginTop="12dp"
         android:paddingLeft="10dp"
         android:orientation="vertical"
+        android:id="@+id/scan"
+        android:clickable="true"
         >
 
         <ImageView
             android:id="@+id/list"
-            android:layout_width="80dp"
+            android:layout_width="68dp"
             android:layout_height="80dp"
-            android:src="@drawable/qrcode_black_small"
-            android:tint="#FFFFFF"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="12dp"
-            />
+            android:src="@drawable/qrcode_black_small"
+            android:tint="#FFFFFF" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -424,6 +425,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/notifications"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -434,6 +436,7 @@
         android:paddingLeft="10dp"
         android:orientation="vertical"
         android:layout_marginRight="12dp"
+        android:clickable="true"
 
         >
 

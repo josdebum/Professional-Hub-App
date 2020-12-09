@@ -22,7 +22,7 @@ internal class MemberAdapter(
                 LoggedInFragment()
             }
 
-            1 -> {
+            2 -> {
                 SubscribedFragment()
             }
 
