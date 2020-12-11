@@ -7,31 +7,35 @@ import androidx.fragment.app.FragmentPagerAdapter
 
 @Suppress("DEPRECATION")
 
-internal class MemberAdapter(
-    var context: Context,
-    fm: FragmentManager,
-    var totalTabs: Int
-) :
-    FragmentPagerAdapter(fm) {
+internal class MemberAdapter(fragmentManager: FragmentManager): FragmentPagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
     override fun getItem(position: Int): Fragment {
-        return when (position) {
-            0 -> {
-                AllFragment()
-            }
-            1 -> {
-                LoggedInFragment()
-            }
 
-            2 -> {
-                SubscribedFragment()
-            }
+        val fragmentList : MutableList<Fragment> = ArrayList()
+         when (position) {
+            0 -> return AllFragment()
+
+            1 -> return LoggedInFragment()
 
 
-            else -> getItem(position)
+            2 -> return SubscribedFragment()
+
         }
+        return fragmentList [position]
     }
 
     override fun getCount(): Int {
-        return totalTabs
+        return 3
+    }
+
+    override fun getPageTitle(position: Int): CharSequence? {
+        when (position) {
+            0 -> return "All"
+            1 -> return "Logged In"
+            2 -> return "Subscribed"
+
+        }
+
+        return null
+
     }
 }

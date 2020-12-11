@@ -5,9 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".SubscribedFragment">
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,11 +15,12 @@
 
             <ProgressBar
                 android:id="@+id/circleprogressbar_cpb_demo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="#c6121111"
-                android:padding="10dp" />
+                android:background="#c8fbc000"
+                android:padding="10dp"
+                android:progress="40"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:max="100"/>
 <!--                android:cpbStartAngle="270"-->
 <!--                android:cpbBackgroundColor="#dcdcdc"-->
 <!--                android:cpbBackgroundSize="10dp"-->
@@ -62,7 +61,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="8dp"
                 android:gravity="center_vertical"
-                android:orientation="vertical">
+                android:orientation="vertical"
+               >
 
 
                 <LinearLayout
@@ -202,10 +202,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="200dp"
             android:background="#c6121111"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            >
 
             <Button
                 android:id="@+id/btn_hourly_usage"
@@ -230,9 +231,6 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
-
-    </ScrollView>
-
 
 
 

@@ -11,25 +11,25 @@
     <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical">
 
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/appbar"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        android:paddingTop="@dimen/appbar_padding_top">
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/appbar"-->
+<!--        android:theme="@style/AppTheme.AppBarOverlay"-->
+<!--        android:paddingTop="@dimen/appbar_padding_top">-->
 
-    <androidx.appcompat.widget.Toolbar
-        app:title="Members"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_width="match_parent"
-        android:id="@+id/toolbar"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:layout_scrollFlags="scroll|enterAlways"
-        android:background="?attr/colorPrimary"
-        android:layout_weight="1"
-    />
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        app:title="Members"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/toolbar"-->
+<!--        app:popupTheme="@style/AppTheme.PopupOverlay"-->
+<!--        app:layout_scrollFlags="scroll|enterAlways"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:layout_weight="1"-->
+<!--    />-->
 
-</com.google.android.material.appbar.AppBarLayout>
+<!--</com.google.android.material.appbar.AppBarLayout>-->
 
 
     <RelativeLayout
@@ -44,49 +44,63 @@
 
 
     <com.google.android.material.tabs.TabLayout
-        android:layout_height="38dp"
+        android:layout_height="50dp"
         android:layout_width="match_parent"
-        android:id="@+id/tabs"
+        android:id="@+id/tabLayout"
         android:background="@drawable/tab_background_unselected"
         android:layout_marginHorizontal="10dp"
         app:tabBackground="@drawable/tab_selector_color"
-        app:tabIndicatorColor="@null"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
         app:tabSelectedTextColor="#fff"
         app:tabTextColor="#000"
-        android:layout_marginTop="8dp">
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="2dp"/>
 
-    <com.google.android.material.tabs.TabItem
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:id="@+id/tabItem"
-        android:text="text_1"/>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tabLayout"
+            android:layout_centerInParent="true"
+            tools:layout_editor_absoluteX="8dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <com.google.android.material.tabs.TabItem
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:id="@+id/tabItem2"
-        android:text="text_2"/>
 
-    <com.google.android.material.tabs.TabItem
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:id="@+id/tabItem3"
-        android:text="text_3"/>
+        <!--    <com.google.android.material.tabs.TabItem-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:id="@+id/tabItem"-->
+<!--        android:text="text_1"/>-->
 
-</com.google.android.material.tabs.TabLayout>
+<!--    <com.google.android.material.tabs.TabItem-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:id="@+id/tabItem2"-->
+<!--        android:text="text_2"/>-->
 
-    <androidx.viewpager.widget.ViewPager
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:id="@+id/container"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:layout_below="@id/tabs"/>
+<!--    <com.google.android.material.tabs.TabItem-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:id="@+id/tabItem3"-->
+<!--        android:text="text_3"/>-->
+
+<!--</com.google.android.material.tabs.TabLayout>-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/container"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--        android:layout_below="@id/tabs"/>-->
 
 </RelativeLayout>
 
 </LinearLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 
 
 <!--    <com.google.android.material.tabs.TabLayout-->
@@ -94,21 +108,12 @@
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:background="@color/colorPrimary"-->
+<!--        android:layout_marginTop="64dp"-->
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent">-->
 <!--    </com.google.android.material.tabs.TabLayout>-->
 
-<!--    <androidx.viewpager.widget.ViewPager-->
-<!--        android:id="@+id/viewPager"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/tabLayout"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        android:layout_marginTop="100dp"-->
-<!--        tools:layout_editor_absoluteX="8dp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
 
 
 
-<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

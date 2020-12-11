@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <de.hdodenhof.circleimageview.CircleImageView
-    android:layout_width="60dp"
-    android:layout_height="60dp"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
     android:id="@+id/profile_picture"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
@@ -16,30 +16,30 @@
     android:src="@drawable/josdebum"/>
 
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
-        android:id="@+id/name"
-        android:layout_marginTop="20dp"
-        android:textSize="12sp"
-        android:textColor="#010205"
         android:layout_marginStart="10dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@id/profile_picture"
-        android:layout_marginLeft="10dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
-        android:id="@+id/email"
-        android:layout_marginTop="10dp"
-        android:textSize="10sp"
-        android:textColor="#8894A2"
         android:layout_marginStart="10dp"
-        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:text="Email"
+        android:textColor="#8894A2"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@id/profile_picture"
-        android:layout_marginLeft="10dp" />
+        app:layout_constraintTop_toBottomOf="@id/name" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

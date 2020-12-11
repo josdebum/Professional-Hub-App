@@ -24,12 +24,13 @@
             android:layout_height="200dp"
             android:src="@drawable/profilepicture" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
+    </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/picture">
+            app:layout_constraintTop_toBottomOf="@id/does">
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
@@ -37,20 +38,19 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary">
             </com.google.android.material.tabs.TabLayout>
+
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPager"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tabLayout"
                 android:layout_centerInParent="true"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="50dp"
                 tools:layout_editor_absoluteX="8dp" />
 
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
-        </RelativeLayout>
 
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

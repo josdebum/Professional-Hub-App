@@ -5,66 +5,159 @@
     android:layout_height="match_parent"
     tools:context=".LoggedInFragment">
 
-    <ScrollView
+    <LinearLayout
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="#c6121111"
+        android:layout_marginTop="10dp">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Surname"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="Joseph"
+        android:textAllCaps="true"
+        android:id="@+id/surname"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
         >
 
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="First name"/>
 
-
-
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="10dp" android:orientation="vertical" android:background="#c6121111" android:layout_marginTop="4dp">
-
-
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:layout_marginBottom="8dp">
-
-
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:orientation="vertical" android:layout_weight="1">
-
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="14sp" android:textColor="@color/colorPrimary" android:text="Surname"/>
-
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginBottom="6dp" android:textSize="16sp" android:textColor="@color/white" android:text="Olu-Flourish" android:textAllCaps="true" android:id="@+id/surname"/>
-
-</LinearLayout>
-
-
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:orientation="vertical" android:layout_weight="1">
-
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="14sp" android:textColor="@color/colorPrimary" android:text="First name"/>
-
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginBottom="6dp" android:textSize="16sp" android:textColor="@color/white" android:text="Emmanuel" android:textAllCaps="true" android:id="@+id/firstname"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="Deborah"
+        android:textAllCaps="true"
+        android:id="@+id/firstname"/>
 
 </LinearLayout>
 
 </LinearLayout>
 
 
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:layout_marginBottom="8dp">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp">
 
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="14sp" android:textColor="@color/colorPrimary" android:text="Email"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Email"/>
 
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginBottom="6dp" android:textSize="16sp" android:textColor="@color/white" android:text="emmanuel.oluflourish@gmail.com" android:id="@+id/email"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="josephdeborah@gmail.com"
+        android:id="@+id/email"/>
 
 </LinearLayout>
 
 
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:layout_marginBottom="8dp">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp">
 
 
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:orientation="vertical" android:layout_weight="1">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
 
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="14sp" android:textColor="@color/colorPrimary" android:text="Phone number"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Phone number"/>
 
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginBottom="6dp" android:textSize="16sp" android:textColor="@color/white" android:text="08161691655" android:textAllCaps="true" android:id="@+id/phone"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="08135579943"
+        android:textAllCaps="true"
+        android:id="@+id/phone"/>
 
 </LinearLayout>
 
 
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:orientation="vertical" android:layout_weight="1">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
 
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="14sp" android:textColor="@color/colorPrimary" android:text="Gender"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Gender"/>
 
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginBottom="6dp" android:textSize="16sp" android:textColor="@color/white" android:text="Male" android:textAllCaps="true" android:id="@+id/gender"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="Female"
+        android:textAllCaps="true"
+        android:id="@+id/gender"/>
 
 </LinearLayout>
 
@@ -91,7 +184,14 @@
 </LinearLayout>
 
 
-    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="10dp" android:orientation="vertical" android:background="#c6121111" android:layout_marginTop="8dp">
+    <LinearLayout
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="#c6121111"
+        android:layout_marginTop="320dp">
 
 
     <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:layout_marginBottom="8dp">
@@ -150,7 +250,7 @@
         android:padding="12dp"
         android:orientation="vertical"
         android:background="#c6121111"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="500dp">
 
 
     <LinearLayout
@@ -238,6 +338,6 @@
 
 </LinearLayout>
 
-    </ScrollView>
+
 
     </RelativeLayout>
